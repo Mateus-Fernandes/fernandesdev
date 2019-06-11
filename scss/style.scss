@@ -43,6 +43,8 @@ body{
 }
 header {
     padding-top: 35px;
+    position: relative;
+    z-index: 20;
 }
 .bg_orange{
     background:#ff4449 url(../img/bg_orange.png) no-repeat center top;
@@ -58,17 +60,13 @@ header {
                 margin-left: 20px;
                 margin-right: 20px;
                 letter-spacing: 0.07em;
+                border-radius: 20px;
             }
         }
     }
 }
 .logo svg {
     width: 103px;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-    color: #FFF;
-    background: #171717;
-    border-radius: 20px;
 }
 
 .banner_principal{
@@ -327,10 +325,10 @@ header {
         transition: .8s;
         svg{
             position: absolute;
-            top: 0;
+            top: 4%;
             left: 4%;
             width: 92%;
-            height: 100%;
+            height: 92%;
             path{
                 stroke-dasharray: 1574;
                 stroke-dashoffset: 1574;
@@ -375,6 +373,10 @@ header {
             position: relative;
             z-index: 9;
             cursor: pointer;
+            a{
+                text-decoration: none;
+                color: #FFF;
+            }
             i{
                 margin-right: 15px;
                 border: 1px solid #FFF;
@@ -402,18 +404,26 @@ header {
       position: relative;
       &.h1 {
         height: 530px;
-        background: #1D2939;
+        background: lightgrey;
       }
       &.h2 {
         height: 263px;
-        background: #1CAF9A;
+        background: lightgrey;
+        .mascara{
+            h4{
+                margin-bottom: 22px;
+            }
+            .icones_action{
+                margin-top: 20px;
+            }
+        }
         img{
             min-width: 100%;
         }
       }
       &.h3 {
         height: 400px;
-        background: #EE6456;
+       background: lightgrey;
       }
       &:hover{
         .mascara{
@@ -697,7 +707,7 @@ header {
 
  :root {  
     --card-padding: 24px;
-    --card-height: 340px;
+    --card-height: 550px;
     --card-skeleton: linear-gradient(lightgrey var(--card-height), transparent 0);
     
     --avatar-size: 32px;
@@ -730,8 +740,8 @@ header {
    */
   
   .mansory > div {
-    //width: 280px; //demo
-    //height: var(--card-height);
+    width: 373px; //demo
+    height: var(--card-height);
     
     &:after {
       content:"";
@@ -795,3 +805,174 @@ header {
     }
   }
   
+  img.mfp-img{
+      max-height: none !important;
+  }
+
+  nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #FFF;
+}
+header.affix {
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 4px 2px #0000001f;
+    width: 100%;
+}

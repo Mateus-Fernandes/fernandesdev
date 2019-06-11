@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/05f0a72c6a.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <title>Fernandes Desenvolvimento - Criação de sites, e-commerce, sistemas e suporte em Poços de Caldas - MG </title>
 </head>
 
@@ -30,24 +32,24 @@
            
           </div>
           <div class="menu_site">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light fill">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Serviços</a>
+                    <a class="nav-link" href="#servicos">Serviços</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Portifólio</a>
+                    <a class="nav-link" href="#portifolio">Portifólio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="#contato">Contato</a>
                   </li>
                 </ul>
               </div>
@@ -76,7 +78,7 @@
               <a href="#" class="botao_portfolio">CONHEÇA NOSSO TRABALHO</a>
             </div>
           </div>
-          <div class="imagem_caption">
+          <div class="imagem_caption d-md-block d-none">
             <img src="img/mockup-inicialv2.png" alt="">
           </div>
         </div>
@@ -99,27 +101,27 @@
       <use xlink:href="#gentle-wave" x="50" y="6" fill="#FFF" opacity="0.3" />
     </g>
   </svg>
-  <section class="servicos">
+  <section class="servicos" id="servicos">
     <div class="container">
-      <div class="d-flex">
+      <div class="d-flex flex-md-nowrap flex-wrap">
         <div class="servicosrow flex-grow-1">
           <div class="row">
-            <div class="col-md-3 pr-0">
+            <div class="col-md-3 col-6 pr-md-0 pr-3">
               <div class="titulo_sect text-right">
                 <h3>Como podemos ajudar</h3>
                 <h2>Web</h2>
                 <p>Somos apaixonados por marketing digital, conheça nossos serviços</p>
               </div>
             </div>
-            <div class="col-md-3 borda_servico"></div>
-            <div class="col-md-3 borda_servico">
+            <div class="col-md-3 d-md-block d-none borda_servico"></div>
+            <div class="col-md-3 col-6 borda_servico">
               <div class="icone_serv"><i class="flaticon-ux"></i></div>
               <div class="desc_serv">
                 <h3>UI/UX <br>Design</h3>
                 <p>Interfaces personalizadas para o seu projeto</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-md-left text-center">
               <div class="icone_serv"><i class="flaticon-online-shop"></i></div>
               <div class="desc_serv">
                 <h3>Lojas<br>Virtuais</h3>
@@ -128,28 +130,28 @@
             </div>
           </div>
           <div class="row border-top">
-            <div class="col-md-3 borda_servico">
+            <div class="col-md-3 col-6 borda_servico">
               <div class="icone_serv"><i class="flaticon-web-design"></i></div>
               <div class="desc_serv">
                 <h3>Criação de <br>Layouts</h3>
                 <p>Sites com a cara e cores do seu negócio, 100% exclusivos</p>
               </div>
             </div>
-            <div class="col-md-3 borda_servico">
+            <div class="col-md-3 col-6 borda_servico">
               <div class="icone_serv"><i class="flaticon-website"></i></div>
               <div class="desc_serv">
                 <h3>Web <br>Development</h3>
                 <p>Trabalhamos com as mais modernas linguagens do mercado</p>
               </div>
             </div>
-            <div class="col-md-3 borda_servico">
+            <div class="col-md-3 col-6 borda_servico">
               <div class="icone_serv"><i class="flaticon-mobile-app"></i></div>
               <div class="desc_serv">
                 <h3>Aplicativos <br>Híbridos</h3>
                 <p>Trabalhamos com aplicativos Ios e Android.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
               <div class="icone_serv"><i class="flaticon-bar-chart"></i></div>
               <div class="desc_serv">
                 <h3>SEO<br></h3>
@@ -189,9 +191,9 @@
   </section>
   <section class="orcamento">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <h2>Vamos começar o seu projeto!</h2>
-        <a href="#" class="botao_orcamento" data-toggle="modal" data-target="#modalExemplo"><span>Faça seu
+      <div class="d-flex align-items-center justify-content-md-between flex-wrap justify-content-center">
+        <h2 class="text-md-left text-center">Vamos começar o seu projeto!</h2>
+        <a href="#" class="botao_orcamento mt-md-0 mt-4" data-toggle="modal" data-target="#modalExemplo"><span>Faça seu
             orçamento</span></a>
       </div>
     </div>
@@ -215,7 +217,7 @@
       </div>
     </div>
   </section>
-  <section class="trabalhos">
+  <section class="trabalhos" id="portifolio">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -235,21 +237,21 @@
                <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                 d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                </svg>
-              <h3>M2 Center</h3>
-              <h4>Ribeirão Preto/SP</h4>
+              <h3>Me Poupa</h3>
+              <h4>Poços de Caldas/MG</h4>
               <div class="desc_projeto">
                 <p><b>Front-end e Back-end</b></p>
-                <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                <p><b>Criação:</b> M2 Center</p>
+                <p><b>Tecnologias:</b> Wordpress</p>
+                <p><b>Criação:</b> Fernandes Dev</p>
                 <p><b>Desenvolvimento:</b> Fernandes Dev</p>
               </div>
               <div class="icones_action d-flex justify-content-center align-items-center">
-                <i class="flaticon-link-symbol"></i>
-                <i class="flaticon-magnifier"></i>
+                  <a href="#"><i class="flaticon-link-symbol"></i></a>
+                <a href="img/projetos/full/mepoupa_full.jpg" class="link"><i class="flaticon-magnifier"></i></a>
               </div>
             </div>
           </div>
-          <div class="h2">
+          <div class="h2" style="height: 391px;">
               <img class="lazy" data-src="img/projetos/maria.png" alt="">
               <div class="mascara">
                   <svg 
@@ -259,17 +261,17 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
+                <h3>Maria Morena Malhas</h3>
+                <h4>Jacutinga/MG</h4>
                 <div class="desc_projeto">
                   <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
+                  <p><b>Tecnologias:</b> Woocommerce + Wordpress</p>
+                  <p><b>Criação:</b> Fernandes Dev</p>
                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://loja.mariamorenamalhas.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/maria_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>
@@ -279,21 +281,21 @@
                   <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 320.5 469.5" xml:space="preserve">
+                 viewBox="0 0 354.5 242.5" xml:space="preserve">
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                  d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
+                  d="M0.500,0.500 L353.500,0.500 L353.500,241.500 L0.500,241.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
+                <h3>Gateware</h3>
+                <h4>Curitiba/PR</h4>
                 <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
+                  <p><b>Front-end</b></p>
+                  <p><b>Tecnologias:</b> HTML5 + CSS3</p>
+                  <p><b>Criação:</b> Agência Red</p>
                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="https://www.gateware.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/gateware_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>  
           </div>
@@ -307,17 +309,17 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
+                <h3>Layana Malhas</h3>
+                <h4>Jacutinga/MG</h4>
                 <div class="desc_projeto">
                   <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
+                  <p><b>Tecnologias:</b> Woocommerce + Wordpress</p>
+                  <p><b>Criação:</b> Fernandes Dev</p>
                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://www.layanamalhas.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/layana_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>
@@ -331,17 +333,17 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
+                <h3>Michel Falcão</h3>
+                <h4>Poços de Caldas/MG</h4>
                 <div class="desc_projeto">
                   <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
+                  <p><b>Tecnologias:</b> Wordpress</p>
+                  <p><b>Criação:</b> Fernandes Dev</p>
                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://www.michelfalcao.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/michel_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>  
@@ -355,17 +357,17 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
+                 <h3>Carol Vaz Nutri</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://www.carolvaznutri.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/carol_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>
@@ -379,17 +381,17 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
+                 <h3>Meydecor</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://www.meydecor.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/meydecor_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>
@@ -399,21 +401,21 @@
                   <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 320.5 469.5" xml:space="preserve">
+                 viewBox="0 0 354.5 242.5" xml:space="preserve">
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                  d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
+                  d="M0.500,0.500 L353.500,0.500 L353.500,241.500 L0.500,241.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
+                 <h3>DS Cars</h3>
+                 <h4>São Paulo/SP</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://www.dscars.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/dscars_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>
@@ -427,17 +429,17 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
+                 <h3>Osvaldo Costa Advocacia</h3>
+                 <h4>São Paulo/SP</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="http://osvaldocostaadvogados.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/advocacia_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>            
           </div>                                                             
@@ -451,21 +453,21 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Premier Treinamentos</h3>
+                 <h4>Curitiba/PR</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end</b></p>
+                   <p><b>Tecnologias:</b> HTML5 + CSS3</p>
+                   <p><b>Criação:</b> Agência Red</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="https://www.premiertreinamentos.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/premier_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>             
           </div>
-          <div class="h3">
+          <div class="h3" style="height: 529px;">
               <img class="lazy" data-src="img/projetos/m2center.png" alt="">
               <div class="mascara">
                   <svg 
@@ -484,8 +486,8 @@
                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
                 </div>
                 <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
+                  <a href="https://www.m2center.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                  <a href="img/projetos/full/m2_full.png" class="link"><i class="flaticon-magnifier"></i></a>
                 </div>
               </div>             
           </div>
@@ -499,18 +501,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Embratop</h3>
+                 <h4>Curitiba/PR</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end</b></p>
+                   <p><b>Tecnologias:</b> HTML5 + CSS3</p>
+                   <p><b>Criação:</b> Agência Red</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/embratop_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>
           </div>
           <div class="h2" style="height: 250px;">
@@ -519,21 +521,21 @@
                 <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 320.5 469.5" xml:space="preserve">
+               viewBox="0 0 354.5 242.5" xml:space="preserve">
                <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
+                d="M0.500,0.500 L353.500,0.500 L353.500,241.500 L0.500,241.500 L0.500,0.500 Z"/>
                </svg>
-              <h3>M2 Center</h3>
-              <h4>Ribeirão Preto/SP</h4>
+              <h3>Salvatur</h3>
+              <h4>Salvador/BA</h4>
               <div class="desc_projeto">
                 <p><b>Front-end e Back-end</b></p>
-                <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                <p><b>Criação:</b> M2 Center</p>
+                <p><b>Tecnologias:</b> Wordpress</p>
+                <p><b>Criação:</b> Fernandes Dev</p>
                 <p><b>Desenvolvimento:</b> Fernandes Dev</p>
               </div>
               <div class="icones_action d-flex justify-content-center align-items-center">
-                <i class="flaticon-link-symbol"></i>
-                <i class="flaticon-magnifier"></i>
+                <a href="http://salvatur.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                <a href="img/projetos/full/salvatur_full.png" class="link"><i class="flaticon-magnifier"></i></a>
               </div>
             </div>
           </div>
@@ -547,18 +549,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>G.A.R.R.A</h3>
+                 <h4>Varginha/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://garra.org.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/garra_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>
           </div>  
           <div class="h1">
@@ -571,18 +573,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Jumanji</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/jumanji_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>    
           <div class="h1">
@@ -595,18 +597,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Motel Ibiza</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://ibizamotelmg.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/ibiza_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>
           <div class="h1">
@@ -619,18 +621,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Toa Toa Bar</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/toatoa_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>
           <div class="h1">
@@ -643,18 +645,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Vick Import</h3>
+                 <h4>São Paulo/SP</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://vickimport.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/vick_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>                                            
           <div class="h1">
@@ -667,18 +669,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Verdes Campos</h3>
+                 <h4>Curitiba/PR</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end</b></p>
+                   <p><b>Tecnologias:</b> HTML5 + CSS3</p>
+                   <p><b>Criação:</b> Agência Red</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/verdes_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>             
           </div>
           <div class="h1">
@@ -691,18 +693,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Construtora CAD</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/cad_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>  
           </div>
           <div class="h2">
@@ -711,22 +713,22 @@
                   <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 320.5 469.5" xml:space="preserve">
+                 viewBox="0 0 354.5 242.5" xml:space="preserve">
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                  d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
+                  d="M0.500,0.500 L353.500,0.500 L353.500,241.500 L0.500,241.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Oncoville</h3>
+                 <h4>Curitiba/PR</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end</b></p>
+                   <p><b>Tecnologias:</b> HTML5 + CSS3</p>
+                   <p><b>Criação:</b> Agência Red</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/oncoville_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>
           <div class="h1">
@@ -739,18 +741,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Vila da Roça</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Woocommerce + Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://viladaroca.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/vila_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>     
           <div class="h1">
@@ -763,18 +765,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Sunshine</h3>
+                 <h4>Curitiba/PR</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end</b></p>
+                   <p><b>Tecnologias:</b> HTML5 + CSS3</p>
+                   <p><b>Criação:</b> Agência Red</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="#" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/sunshine_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div> 
           <div class="h1">
@@ -787,18 +789,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Mr Philip</h3>
+                 <h4>Poços de Caldas/MG</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://mrphilip.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/mrphillip_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>
           <div class="h1">
@@ -811,18 +813,18 @@
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
                   d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Vick Import</h3>
+                 <h4>São Paulo/SP</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://vickimport.com.br" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/vick_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>
           <div class="h2">
@@ -831,29 +833,29 @@
                   <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 320.5 469.5" xml:space="preserve">
+                 viewBox="0 0 354.5 242.5" xml:space="preserve">
                  <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                  d="M0.500,0.500 L319.500,0.500 L319.500,468.500 L0.500,468.500 L0.500,0.500 Z"/>
+                  d="M0.500,0.500 L353.500,0.500 L353.500,241.500 L0.500,241.500 L0.500,0.500 Z"/>
                  </svg>
-                <h3>M2 Center</h3>
-                <h4>Ribeirão Preto/SP</h4>
-                <div class="desc_projeto">
-                  <p><b>Front-end e Back-end</b></p>
-                  <p><b>Tecnologias:</b> Laravel / VueJS</p>
-                  <p><b>Criação:</b> M2 Center</p>
-                  <p><b>Desenvolvimento:</b> Fernandes Dev</p>
-                </div>
-                <div class="icones_action d-flex justify-content-center align-items-center">
-                  <i class="flaticon-link-symbol"></i>
-                  <i class="flaticon-magnifier"></i>
-                </div>
+                 <h3>Água Leste</h3>
+                 <h4>São Paulo/SP</h4>
+                 <div class="desc_projeto">
+                   <p><b>Front-end e Back-end</b></p>
+                   <p><b>Tecnologias:</b> Wordpress</p>
+                   <p><b>Criação:</b> Fernandes Dev</p>
+                   <p><b>Desenvolvimento:</b> Fernandes Dev</p>
+                 </div>
+                 <div class="icones_action d-flex justify-content-center align-items-center">
+                   <a href="http://agualeste.com.br/" target="_blank"><i class="flaticon-link-symbol"></i></a>
+                   <a href="img/projetos/full/agualeste_full.png" class="link"><i class="flaticon-magnifier"></i></a>
+                 </div>
               </div>            
           </div>                                                     
         </div>
       </div>
     </div>
   </section>
-  <section class="contato">
+  <section class="contato" id="contato">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -937,6 +939,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
     <script src="js/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 

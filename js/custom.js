@@ -40,6 +40,43 @@ var aText = new Array(
     // plugin build-in placeholder management
     $(function() {
      $('.lazy').lazy({
-         placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+         placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7...",
+         delay: 1000
      });
+     $('.mansory').magnificPopup({
+        delegate: 'a.link', // child items selector, by clicking on it popup will open
+        type: 'image'
+        // other options
+    });
+    $(window).on('scroll', function (event) {
+        var scrollValue = $(window).scrollTop();
+        if (scrollValue > 120) {
+            $('header').addClass('affix');
+        } else{
+            $('header').removeClass('affix');
+        }
+    });
+
+  // Add smooth scrolling to all links
+  $("header a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+        var tops = $(hash).offset().top;
+        var res = tops - 162;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: res
+      }, 800, function(){
+
+      });
+    } // End if
+  });    
  });
+
