@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 09/06/2019 18:35
+    Creation date: 12/06/2019 14:06
     */
 
     @font-face {
@@ -45,6 +45,12 @@
 .flaticon-bar-chart:before { content: "\f105"; }
 .flaticon-link-symbol:before { content: "\f106"; }
 .flaticon-magnifier:before { content: "\f107"; }
+.flaticon-man-user:before { content: "\f108"; }
+.flaticon-envelope:before { content: "\f109"; }
+.flaticon-smartphone-call:before { content: "\f10a"; }
+.flaticon-facebook:before { content: "\f10b"; }
+.flaticon-instagram:before { content: "\f10c"; }
+.flaticon-linkedin:before { content: "\f10d"; }
     
     $font-Flaticon-ux: "\f100";
     $font-Flaticon-online-shop: "\f101";
@@ -54,3 +60,9 @@
     $font-Flaticon-bar-chart: "\f105";
     $font-Flaticon-link-symbol: "\f106";
     $font-Flaticon-magnifier: "\f107";
+    $font-Flaticon-man-user: "\f108";
+    $font-Flaticon-envelope: "\f109";
+    $font-Flaticon-smartphone-call: "\f10a";
+    $font-Flaticon-facebook: "\f10b";
+    $font-Flaticon-instagram: "\f10c";
+    $font-Flaticon-linkedin: "\f10d";

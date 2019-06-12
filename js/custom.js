@@ -80,3 +80,7 @@ var aText = new Array(
   });    
  });
 
+ $(".hamburger").click(function()
+ {
+     $(".navigation").toggleClass("open_menu");
+ });

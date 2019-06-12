@@ -9,7 +9,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/05f0a72c6a.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -31,7 +30,7 @@
               </svg>
            
           </div>
-          <div class="menu_site">
+          <div class="menu_site d-md-block d-none">
             <nav class="navbar navbar-expand-lg navbar-light fill">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +54,22 @@
               </div>
             </nav>
           </div>
+          <div class="orcamento_btn">
+            <a href="#" class="btn orcamentos" data-toggle="modal" data-target="#modalExemplo">Orçamento</a>
+          </div>
+          <nav class="navigation d-md-none d-flex justify-content-center">
+            <div class="hamburger">
+                <span class="bars"></span>
+            </div>
+            <div class="mobile_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Portifólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>                       
+            </div>
+        </nav>           
         </div>
       </div>
     </header>
@@ -134,14 +149,14 @@
               <div class="icone_serv"><i class="flaticon-web-design"></i></div>
               <div class="desc_serv">
                 <h3>Criação de <br>Layouts</h3>
-                <p>Sites com a cara e cores do seu negócio, 100% exclusivos</p>
+                <p>Sites com a cara e cores do seu negócio, 100% exclusivo.</p>
               </div>
             </div>
             <div class="col-md-3 col-6 borda_servico">
               <div class="icone_serv"><i class="flaticon-website"></i></div>
               <div class="desc_serv">
                 <h3>Web <br>Development</h3>
-                <p>Trabalhamos com as mais modernas linguagens do mercado</p>
+                <p>Sites e sistemas web seguindo os padrões modernos do mercado.</p>
               </div>
             </div>
             <div class="col-md-3 col-6 borda_servico">
@@ -877,31 +892,31 @@
           </div>
           <div class="cada_contato">
             <div class="icones_social d-flex">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-instagram"></i>
+              <i class="flaticon-facebook"></i>
+              <i class="flaticon-linkedin"></i>
+              <i class="flaticon-instagram"></i>
             </div>
           </div>
         </div>
         <div class="col-md-8">
           <div class="tm-contact-form-7 style-03">
-            <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+            <form action="https://formspree.io/contato@fernandesdesenvolvimento.com.br" method="post" class="wpcf7-form">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="form-item form-left-icon"> <span class="form-icon far fa-user"></span> <span
+                  <div class="form-item form-left-icon"> <span class="form-icon flaticon-man-user"></span> <span
                       class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40"
                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
                         aria-invalid="false" placeholder="Nome *"></span></div>
                 </div>
                 <div class="col-md-6">
-                  <div class="form-item form-left-icon"> <span class="form-icon far fa-envelope"></span><span
+                  <div class="form-item form-left-icon"> <span class="form-icon flaticon-envelope"></span><span
                       class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value=""
                         size="40"
                         class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                         aria-required="true" aria-invalid="false" placeholder="Email *"></span></div>
                 </div>
                 <div class="col-md-12">
-                  <div class="form-item form-left-icon"> <span class="form-icon fas fa-mobile"></span><span
+                  <div class="form-item form-left-icon"> <span class="form-icon flaticon-smartphone-call"></span><span
                       class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40"
                         class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false"
                         placeholder="Telefone"></span></div>
